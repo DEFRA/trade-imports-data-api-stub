@@ -1,5 +1,5 @@
 ﻿# Base dotnet image
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
@@ -12,18 +12,19 @@ RUN apt update && \
     rm -rf /var/lib/apt/lists/*
 
 # Build stage image
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+
 WORKDIR /src
 
-COPY . .
-WORKDIR "/src"
+COPY src/Stub/Stub.csproj src/Stub/Stub.csproj
+COPY Defra.TradeImportsDataApiStub.sln Defra.TradeImportsDataApiStub.sln
 
-# unit test and code coverage
-RUN dotnet test TradeImportsDataApiStub.Test
+RUN dotnet restore Defra.TradeImportsDataApiStub.sln
+
+COPY src src
 
 FROM build AS publish
-RUN dotnet publish TradeImportsDataApiStub -c Release -o /app/publish /p:UseAppHost=false
-
+RUN dotnet publish src/Stub -c Release -o /app/publish /p:UseAppHost=false
 
 ENV ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
 
@@ -32,4 +33,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 EXPOSE 8085
-ENTRYPOINT ["dotnet", "TradeImportsDataApiStub.dll"]
+ENTRYPOINT ["dotnet", "Defra.TradeImportsDataApiStub.Stub.dll"]
