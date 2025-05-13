@@ -189,7 +189,7 @@
         "purposeGroup": "For Transit to 3rd Country",
         "estimatedArrivesAtPortOfExit": "2024-11-12T08:30:00Z"
       },
-      "pointOfEntry": "GBDERA1A",
+      "pointOfEntry": "GBTEEP1",
       "pointOfEntryControlPoint": null,
       "meansOfTransport": {
         "type": null,
