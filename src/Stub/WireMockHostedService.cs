@@ -36,7 +36,7 @@ public class WireMockHostedService(
 
     private void ConfigureStubbedData()
     {
-        // if (_wireMockServer is null) return;
+        _wireMockServer?.StubAllScenarios(logger);
     }
 
     public Task StopAsync(CancellationToken cancellationToken)
