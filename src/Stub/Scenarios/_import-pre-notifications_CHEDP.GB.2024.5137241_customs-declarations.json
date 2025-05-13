@@ -48,7 +48,7 @@
     },
     "clearanceDecision": {
       "externalCorrelationId": null,
-      "timestamp": "2025-05-13T14:37:24.739Z",
+      "timestamp": "2025-02-21T13:28:41.129Z",
       "externalVersionNumber": 1,
       "decisionNumber": 1,
       "sourceVersion": "CHEDP.GB.2024.5137241:161124053356:CR-VERSION-1",
@@ -70,8 +70,8 @@
     },
     "finalisation": null,
     "inboundError": null,
-    "created": "2025-05-13T14:37:24.698Z",
-    "updated": "2025-05-13T14:37:24.744Z"
+    "created": "2025-02-21T13:28:39.129Z",
+    "updated": "2025-02-21T13:28:40.129Z"
   },
   {
     "movementReferenceNumber": "24GBDFPJ28XLD8OAR5",
@@ -122,7 +122,7 @@
     },
     "clearanceDecision": {
       "externalCorrelationId": null,
-      "timestamp": "2025-05-13T14:37:26.784Z",
+      "timestamp": "2025-02-21T13:28:41.129Z",
       "externalVersionNumber": 1,
       "decisionNumber": 1,
       "sourceVersion": "CHEDP.GB.2024.5137241:161124053356:CR-VERSION-1",
@@ -144,7 +144,7 @@
     },
     "finalisation": null,
     "inboundError": null,
-    "created": "2025-05-13T14:37:26.732Z",
-    "updated": "2025-05-13T14:37:26.79Z"
+    "created": "2025-02-21T13:28:39.129Z",
+    "updated": "2025-02-21T13:28:40.129Z"
   }
 ]
