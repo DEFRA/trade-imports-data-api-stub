@@ -18,7 +18,7 @@ public static class WireMockExtensions
 
         foreach (var scenario in scenarios)
         {
-            var path = scenario.Replace("_", "/").Replace(".json", "");
+            var path = ConvertScenarioToEndpoint(scenario);
             var response = Response
                 .Create()
                 .WithStatusCode(StatusCodes.Status200OK)
@@ -30,6 +30,28 @@ public static class WireMockExtensions
             logger.LogInformation("Stubbed {Scenario}", path);
         }
     }
+
+    public static void StubUtilityEndpoints(this WireMockServer wireMock)
+    {
+        wireMock
+            .Given(Request.Create().WithPath("/utility/all-scenarios").UsingGet())
+            .RespondWith(
+                Response
+                    .Create()
+                    .WithStatusCode(StatusCodes.Status200OK)
+                    .WithBodyAsJson(
+                        new
+                        {
+                            supportedEndpoints = GetAllScenariosStubs()
+                                .Select(ConvertScenarioToEndpoint),
+                        },
+                        indented: true
+                    )
+            );
+    }
+
+    private static string ConvertScenarioToEndpoint(string scenario) =>
+        scenario.Replace("_", "/").Replace(".json", "");
 
     private static IEnumerable<string> GetAllScenariosStubs() =>
         Anchor
