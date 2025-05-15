@@ -17,6 +17,26 @@
     "status": "VALIDATED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": {
+      "commodityResults": [
+        {
+          "riskDecision": "NOTREQUIRED",
+          "exitRiskDecision": null,
+          "hmiDecision": null,
+          "phsiDecision": null,
+          "phsiClassification": null,
+          "phsi": null,
+          "uniqueId": "287917bd-c4f3-4de8-9c37-68f85e47cfa9",
+          "eppoCode": null,
+          "variety": null,
+          "isWoody": null,
+          "indoorOutdoor": null,
+          "propagation": null,
+          "phsiRuleType": null
+        }
+      ],
+      "assessedOn": "2024-12-04T14:28:48"
+    },
     "journeyRiskCategorisation": null,
     "isHighRiskEuImport": false,
     "partOne": {
@@ -159,6 +179,70 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": null,
       "isGvmsRoute": true,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": 17600,
+        "totalNetWeight": 16430,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 1150,
+        "temperature": "Chilled",
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "TR",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": null,
+        "regionOfOrigin": null,
+        "consignedCountry": "TR",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": "human",
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Lemons (Citrus limon, Citrus limonum)",
+            "commodityId": "08055010",
+            "complementId": 2,
+            "complementName": null,
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": null,
+            "speciesName": null,
+            "speciesNomination": null,
+            "speciesTypeName": null,
+            "speciesType": "441153a1029f2c486ae1aeaec7c0a1352dae82afe80c56c4db8e9c627d8f3755",
+            "speciesClassName": null,
+            "speciesClass": "441153a1029f2c486ae1aeaec7c0a1352dae82afe80c56c4db8e9c627d8f3755",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": true
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "287917bd-c4f3-4de8-9c37-68f85e47cfa9",
+            "complementID": 2,
+            "speciesID": null,
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "16430"
+              },
+              {
+                "key": "number_package",
+                "data": "1150"
+              },
+              {
+                "key": "type_package",
+                "data": "Package"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": null,
         "internalMarketPurpose": null,
@@ -360,6 +444,7 @@
       "consignmentValidations": null,
       "checkedOn": "2024-12-07T14:25:00Z",
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": "Not required",
@@ -384,78 +469,7 @@
     "requestId": null,
     "isCdsFullMatched": true,
     "chedTypeVersion": 2,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": 17600,
-      "totalNetWeight": 16430,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 1150,
-      "temperature": "Chilled",
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "TR",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": null,
-      "regionOfOrigin": null,
-      "consignedCountry": "TR",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": "human"
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Lemons (Citrus limon, Citrus limonum)",
-        "commodityId": "08055010",
-        "complementId": 2,
-        "complementName": null,
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": null,
-        "speciesName": null,
-        "speciesNomination": null,
-        "speciesTypeName": null,
-        "speciesType": "441153a1029f2c486ae1aeaec7c0a1352dae82afe80c56c4db8e9c627d8f3755",
-        "speciesClassName": null,
-        "speciesClass": "441153a1029f2c486ae1aeaec7c0a1352dae82afe80c56c4db8e9c627d8f3755",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": true,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "16430"
-          },
-          {
-            "key": "number_package",
-            "data": "1150"
-          },
-          {
-            "key": "type_package",
-            "data": "Package"
-          }
-        ],
-        "riskAssesment": {
-          "riskDecision": "NOTREQUIRED",
-          "exitRiskDecision": null,
-          "hmiDecision": null,
-          "phsiDecision": null,
-          "phsiClassification": null,
-          "phsi": null,
-          "uniqueId": "287917bd-c4f3-4de8-9c37-68f85e47cfa9",
-          "eppoCode": null,
-          "variety": null,
-          "isWoody": null,
-          "indoorOutdoor": null,
-          "propagation": null,
-          "phsiRuleType": null
-        },
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

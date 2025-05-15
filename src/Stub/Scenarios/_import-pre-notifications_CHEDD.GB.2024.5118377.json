@@ -17,6 +17,26 @@
     "status": "VALIDATED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": {
+      "commodityResults": [
+        {
+          "riskDecision": "NOTREQUIRED",
+          "exitRiskDecision": null,
+          "hmiDecision": null,
+          "phsiDecision": null,
+          "phsiClassification": null,
+          "phsi": null,
+          "uniqueId": "ca75c85c-b375-4c8b-8b2c-8afcb79f0704",
+          "eppoCode": null,
+          "variety": null,
+          "isWoody": null,
+          "indoorOutdoor": null,
+          "propagation": null,
+          "phsiRuleType": null
+        }
+      ],
+      "assessedOn": "2024-11-08T16:14:08"
+    },
     "journeyRiskCategorisation": null,
     "isHighRiskEuImport": false,
     "partOne": {
@@ -158,6 +178,70 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": null,
       "isGvmsRoute": false,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": 2676.5,
+        "totalNetWeight": 2650,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 106,
+        "temperature": "Ambient",
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "IN",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": false,
+        "regionOfOrigin": null,
+        "consignedCountry": "IN",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": "human",
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Other",
+            "commodityId": "0904220019",
+            "complementId": 32822,
+            "complementName": null,
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": null,
+            "speciesName": null,
+            "speciesNomination": null,
+            "speciesTypeName": null,
+            "speciesType": "245c24459f5c8395036d1490324b625a3c013f3d81a70ffa8a345718681c822f",
+            "speciesClassName": null,
+            "speciesClass": "6e4522c004fed120c4ff3b743b9e5f516df6bd2dcb9b98bf954c2804c31e7632",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": null
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "ca75c85c-b375-4c8b-8b2c-8afcb79f0704",
+            "complementID": 32822,
+            "speciesID": null,
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "2650"
+              },
+              {
+                "key": "number_package",
+                "data": "106"
+              },
+              {
+                "key": "type_package",
+                "data": "Bag"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": null,
         "internalMarketPurpose": null,
@@ -422,6 +506,7 @@
       "consignmentValidations": null,
       "checkedOn": "2024-12-16T20:08:00Z",
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": "Not required",
@@ -446,78 +531,7 @@
     "requestId": null,
     "isCdsFullMatched": null,
     "chedTypeVersion": 2,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": 2676.5,
-      "totalNetWeight": 2650,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 106,
-      "temperature": "Ambient",
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "IN",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": false,
-      "regionOfOrigin": null,
-      "consignedCountry": "IN",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": "human"
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Other",
-        "commodityId": "0904220019",
-        "complementId": 32822,
-        "complementName": null,
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": null,
-        "speciesName": null,
-        "speciesNomination": null,
-        "speciesTypeName": null,
-        "speciesType": "245c24459f5c8395036d1490324b625a3c013f3d81a70ffa8a345718681c822f",
-        "speciesClassName": null,
-        "speciesClass": "6e4522c004fed120c4ff3b743b9e5f516df6bd2dcb9b98bf954c2804c31e7632",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": null,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "2650"
-          },
-          {
-            "key": "number_package",
-            "data": "106"
-          },
-          {
-            "key": "type_package",
-            "data": "Bag"
-          }
-        ],
-        "riskAssesment": {
-          "riskDecision": "NOTREQUIRED",
-          "exitRiskDecision": null,
-          "hmiDecision": null,
-          "phsiDecision": null,
-          "phsiClassification": null,
-          "phsi": null,
-          "uniqueId": "ca75c85c-b375-4c8b-8b2c-8afcb79f0704",
-          "eppoCode": null,
-          "variety": null,
-          "isWoody": null,
-          "indoorOutdoor": null,
-          "propagation": null,
-          "phsiRuleType": null
-        },
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

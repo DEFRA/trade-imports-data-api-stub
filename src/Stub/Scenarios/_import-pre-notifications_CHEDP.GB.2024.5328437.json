@@ -17,6 +17,26 @@
     "status": "VALIDATED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": {
+      "commodityResults": [
+        {
+          "riskDecision": "REQUIRED",
+          "exitRiskDecision": null,
+          "hmiDecision": null,
+          "phsiDecision": null,
+          "phsiClassification": null,
+          "phsi": null,
+          "uniqueId": "d1aa9e66-3d4b-4fed-a973-de0cd63a2724",
+          "eppoCode": null,
+          "variety": null,
+          "isWoody": null,
+          "indoorOutdoor": null,
+          "propagation": null,
+          "phsiRuleType": null
+        }
+      ],
+      "assessedOn": "2024-12-23T10:55:16"
+    },
     "journeyRiskCategorisation": {
       "riskLevel": "Medium",
       "riskLevelMethod": "User",
@@ -163,6 +183,74 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": true,
       "isGvmsRoute": false,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": 17300.92,
+        "totalNetWeight": 15797.6,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 1274,
+        "temperature": "Ambient",
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "PH",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": null,
+        "regionOfOrigin": null,
+        "consignedCountry": "PH",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": null,
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "other",
+            "commodityId": "16041428",
+            "complementId": 1,
+            "complementName": "Katsuwonus (Euthynnus) pelamis",
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": "1a5195626f410737f252fa4d72f82697d2840fc2d1bea5b6a733e20349aeaa23",
+            "speciesName": "1188bf7ef4a548d99d80339c70ffbe72eded09d95e55a086063e7d0bd8eed2b9",
+            "speciesNomination": "1188bf7ef4a548d99d80339c70ffbe72eded09d95e55a086063e7d0bd8eed2b9",
+            "speciesTypeName": null,
+            "speciesType": "245c24459f5c8395036d1490324b625a3c013f3d81a70ffa8a345718681c822f",
+            "speciesClassName": null,
+            "speciesClass": "1a5195626f410737f252fa4d72f82697d2840fc2d1bea5b6a733e20349aeaa23",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": false
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "d1aa9e66-3d4b-4fed-a973-de0cd63a2724",
+            "complementID": 1,
+            "speciesID": "494252",
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "15797.6"
+              },
+              {
+                "key": "number_package",
+                "data": "1274"
+              },
+              {
+                "key": "type_package",
+                "data": "Case"
+              },
+              {
+                "key": "is_catch_certificate_required",
+                "data": "true"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": true,
         "internalMarketPurpose": "Human Consumption",
@@ -386,6 +474,7 @@
       "consignmentValidations": null,
       "checkedOn": "2024-12-29T10:05:00Z",
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": "Required",
@@ -410,82 +499,7 @@
     "requestId": null,
     "isCdsFullMatched": null,
     "chedTypeVersion": 1,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": 17300.92,
-      "totalNetWeight": 15797.6,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 1274,
-      "temperature": "Ambient",
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "PH",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": null,
-      "regionOfOrigin": null,
-      "consignedCountry": "PH",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": null
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "other",
-        "commodityId": "16041428",
-        "complementId": 1,
-        "complementName": "Katsuwonus (Euthynnus) pelamis",
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": "1a5195626f410737f252fa4d72f82697d2840fc2d1bea5b6a733e20349aeaa23",
-        "speciesName": "1188bf7ef4a548d99d80339c70ffbe72eded09d95e55a086063e7d0bd8eed2b9",
-        "speciesNomination": "1188bf7ef4a548d99d80339c70ffbe72eded09d95e55a086063e7d0bd8eed2b9",
-        "speciesTypeName": null,
-        "speciesType": "245c24459f5c8395036d1490324b625a3c013f3d81a70ffa8a345718681c822f",
-        "speciesClassName": null,
-        "speciesClass": "1a5195626f410737f252fa4d72f82697d2840fc2d1bea5b6a733e20349aeaa23",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": false,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "15797.6"
-          },
-          {
-            "key": "number_package",
-            "data": "1274"
-          },
-          {
-            "key": "type_package",
-            "data": "Case"
-          },
-          {
-            "key": "is_catch_certificate_required",
-            "data": "true"
-          }
-        ],
-        "riskAssesment": {
-          "riskDecision": "REQUIRED",
-          "exitRiskDecision": null,
-          "hmiDecision": null,
-          "phsiDecision": null,
-          "phsiClassification": null,
-          "phsi": null,
-          "uniqueId": "d1aa9e66-3d4b-4fed-a973-de0cd63a2724",
-          "eppoCode": null,
-          "variety": null,
-          "isWoody": null,
-          "indoorOutdoor": null,
-          "propagation": null,
-          "phsiRuleType": null
-        },
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

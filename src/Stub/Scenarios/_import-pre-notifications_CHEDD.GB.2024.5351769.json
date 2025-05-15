@@ -25,6 +25,26 @@
     "status": "IN_PROGRESS",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": {
+      "commodityResults": [
+        {
+          "riskDecision": "NOTREQUIRED",
+          "exitRiskDecision": null,
+          "hmiDecision": null,
+          "phsiDecision": null,
+          "phsiClassification": null,
+          "phsi": null,
+          "uniqueId": "40da26e2-7431-432a-b140-ff6cf9563cf9",
+          "eppoCode": null,
+          "variety": null,
+          "isWoody": null,
+          "indoorOutdoor": null,
+          "propagation": null,
+          "phsiRuleType": null
+        }
+      ],
+      "assessedOn": "2024-12-27T16:06:35"
+    },
     "journeyRiskCategorisation": null,
     "isHighRiskEuImport": false,
     "partOne": {
@@ -164,6 +184,70 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": null,
       "isGvmsRoute": false,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": 22000,
+        "totalNetWeight": 20000,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 1392,
+        "temperature": "Chilled",
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "TR",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": null,
+        "regionOfOrigin": null,
+        "consignedCountry": "TR",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": "human",
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Pink",
+            "commodityId": "0805400019",
+            "complementId": 1,
+            "complementName": null,
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": null,
+            "speciesName": null,
+            "speciesNomination": null,
+            "speciesTypeName": null,
+            "speciesType": "3b4090fb0846882651bc0648babff02e1246c8146ef78fa46f17f1bf48fc0921",
+            "speciesClassName": null,
+            "speciesClass": "3b4090fb0846882651bc0648babff02e1246c8146ef78fa46f17f1bf48fc0921",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": null
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "40da26e2-7431-432a-b140-ff6cf9563cf9",
+            "complementID": 1,
+            "speciesID": null,
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "20000"
+              },
+              {
+                "key": "number_package",
+                "data": "1392"
+              },
+              {
+                "key": "type_package",
+                "data": "Carton"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": null,
         "internalMarketPurpose": null,
@@ -406,6 +490,7 @@
       ],
       "checkedOn": null,
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": "Not required",
@@ -451,78 +536,7 @@
     "requestId": null,
     "isCdsFullMatched": null,
     "chedTypeVersion": 2,
-    "isGMRMatched": false,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": 22000,
-      "totalNetWeight": 20000,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 1392,
-      "temperature": "Chilled",
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "TR",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": null,
-      "regionOfOrigin": null,
-      "consignedCountry": "TR",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": "human"
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Pink",
-        "commodityId": "0805400019",
-        "complementId": 1,
-        "complementName": null,
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": null,
-        "speciesName": null,
-        "speciesNomination": null,
-        "speciesTypeName": null,
-        "speciesType": "3b4090fb0846882651bc0648babff02e1246c8146ef78fa46f17f1bf48fc0921",
-        "speciesClassName": null,
-        "speciesClass": "3b4090fb0846882651bc0648babff02e1246c8146ef78fa46f17f1bf48fc0921",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": null,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "20000"
-          },
-          {
-            "key": "number_package",
-            "data": "1392"
-          },
-          {
-            "key": "type_package",
-            "data": "Carton"
-          }
-        ],
-        "riskAssesment": {
-          "riskDecision": "NOTREQUIRED",
-          "exitRiskDecision": null,
-          "hmiDecision": null,
-          "phsiDecision": null,
-          "phsiClassification": null,
-          "phsi": null,
-          "uniqueId": "40da26e2-7431-432a-b140-ff6cf9563cf9",
-          "eppoCode": null,
-          "variety": null,
-          "isWoody": null,
-          "indoorOutdoor": null,
-          "propagation": null,
-          "phsiRuleType": null
-        },
-        "checks": null
-      }
-    ]
+    "isGMRMatched": false
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

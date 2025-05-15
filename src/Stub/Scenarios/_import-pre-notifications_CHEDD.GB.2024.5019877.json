@@ -17,6 +17,26 @@
     "status": "VALIDATED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": {
+      "commodityResults": [
+        {
+          "riskDecision": "NOTREQUIRED",
+          "exitRiskDecision": null,
+          "hmiDecision": null,
+          "phsiDecision": null,
+          "phsiClassification": null,
+          "phsi": null,
+          "uniqueId": "834ec87f-0855-4f34-bc0c-90408b6c0b5f",
+          "eppoCode": null,
+          "variety": null,
+          "isWoody": null,
+          "indoorOutdoor": null,
+          "propagation": null,
+          "phsiRuleType": null
+        }
+      ],
+      "assessedOn": "2024-12-04T16:14:19"
+    },
     "journeyRiskCategorisation": null,
     "isHighRiskEuImport": false,
     "partOne": {
@@ -156,6 +176,70 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": null,
       "isGvmsRoute": false,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": 25056,
+        "totalNetWeight": 24480,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 720,
+        "temperature": "Ambient",
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "CN",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": null,
+        "regionOfOrigin": null,
+        "consignedCountry": "CN",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": "human",
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Tea, whether or not flavoured",
+            "commodityId": "0902",
+            "complementId": 1,
+            "complementName": null,
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": null,
+            "speciesName": null,
+            "speciesNomination": null,
+            "speciesTypeName": null,
+            "speciesType": "0127ac4224cabcd72be2bbc6470fbe50c13d49c5c63f16225a663ebbf17e3474",
+            "speciesClassName": null,
+            "speciesClass": "0127ac4224cabcd72be2bbc6470fbe50c13d49c5c63f16225a663ebbf17e3474",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": null
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "834ec87f-0855-4f34-bc0c-90408b6c0b5f",
+            "complementID": 1,
+            "speciesID": null,
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "24480"
+              },
+              {
+                "key": "number_package",
+                "data": "720"
+              },
+              {
+                "key": "type_package",
+                "data": "Bag"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": null,
         "internalMarketPurpose": null,
@@ -395,6 +479,7 @@
       "consignmentValidations": null,
       "checkedOn": "2024-12-16T15:05:00Z",
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": "Not required",
@@ -419,78 +504,7 @@
     "requestId": null,
     "isCdsFullMatched": null,
     "chedTypeVersion": 2,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": 25056,
-      "totalNetWeight": 24480,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 720,
-      "temperature": "Ambient",
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "CN",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": null,
-      "regionOfOrigin": null,
-      "consignedCountry": "CN",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": "human"
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Tea, whether or not flavoured",
-        "commodityId": "0902",
-        "complementId": 1,
-        "complementName": null,
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": null,
-        "speciesName": null,
-        "speciesNomination": null,
-        "speciesTypeName": null,
-        "speciesType": "0127ac4224cabcd72be2bbc6470fbe50c13d49c5c63f16225a663ebbf17e3474",
-        "speciesClassName": null,
-        "speciesClass": "0127ac4224cabcd72be2bbc6470fbe50c13d49c5c63f16225a663ebbf17e3474",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": null,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "24480"
-          },
-          {
-            "key": "number_package",
-            "data": "720"
-          },
-          {
-            "key": "type_package",
-            "data": "Bag"
-          }
-        ],
-        "riskAssesment": {
-          "riskDecision": "NOTREQUIRED",
-          "exitRiskDecision": null,
-          "hmiDecision": null,
-          "phsiDecision": null,
-          "phsiClassification": null,
-          "phsi": null,
-          "uniqueId": "834ec87f-0855-4f34-bc0c-90408b6c0b5f",
-          "eppoCode": null,
-          "variety": null,
-          "isWoody": null,
-          "indoorOutdoor": null,
-          "propagation": null,
-          "phsiRuleType": null
-        },
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

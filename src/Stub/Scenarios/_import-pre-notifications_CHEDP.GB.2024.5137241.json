@@ -17,6 +17,26 @@
     "status": "VALIDATED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": {
+      "commodityResults": [
+        {
+          "riskDecision": "NOTREQUIRED",
+          "exitRiskDecision": null,
+          "hmiDecision": null,
+          "phsiDecision": null,
+          "phsiClassification": null,
+          "phsi": null,
+          "uniqueId": "9e979d90-2608-48a0-be67-7e74016f04a3",
+          "eppoCode": null,
+          "variety": null,
+          "isWoody": null,
+          "indoorOutdoor": null,
+          "propagation": null,
+          "phsiRuleType": null
+        }
+      ],
+      "assessedOn": "2024-11-15T00:00:12"
+    },
     "journeyRiskCategorisation": {
       "riskLevel": "Medium",
       "riskLevelMethod": "User",
@@ -161,6 +181,70 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": null,
       "isGvmsRoute": false,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": 21813.12,
+        "totalNetWeight": 20160,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 2016,
+        "temperature": "Frozen",
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "BR",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": false,
+        "regionOfOrigin": "BR-2",
+        "consignedCountry": "BR",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": null,
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Of fowls of the species Gallus domesticus",
+            "commodityId": "160232",
+            "complementId": 1,
+            "complementName": "Aves",
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": "84b29ed57635428e10161d923dd9824ef4701819ddc022c417cdd647c217340e",
+            "speciesName": "6da1384d8aba9e50273bf26e1951e1ab4ea6633d426fe8a6954315350988b99b",
+            "speciesNomination": "6da1384d8aba9e50273bf26e1951e1ab4ea6633d426fe8a6954315350988b99b",
+            "speciesTypeName": "cbf31b0c8f40f0963d78ae7ab60088615c736f283a838c09e75d8d52f59bc59a",
+            "speciesType": "1283c251a28f2a64609941fa66f28dcc241d0e6fec4345ae5df73e900229e4ca",
+            "speciesClassName": null,
+            "speciesClass": "84b29ed57635428e10161d923dd9824ef4701819ddc022c417cdd647c217340e",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": null
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "9e979d90-2608-48a0-be67-7e74016f04a3",
+            "complementID": 1,
+            "speciesID": "256860",
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "20160"
+              },
+              {
+                "key": "number_package",
+                "data": "2016"
+              },
+              {
+                "key": "type_package",
+                "data": "Carton"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": true,
         "internalMarketPurpose": "Human Consumption",
@@ -367,6 +451,7 @@
       "consignmentValidations": null,
       "checkedOn": "2024-11-16T05:33:00Z",
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": "Not required",
@@ -391,78 +476,7 @@
     "requestId": null,
     "isCdsFullMatched": null,
     "chedTypeVersion": 1,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": 21813.12,
-      "totalNetWeight": 20160,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 2016,
-      "temperature": "Frozen",
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "BR",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": false,
-      "regionOfOrigin": "BR-2",
-      "consignedCountry": "BR",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": null
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Of fowls of the species Gallus domesticus",
-        "commodityId": "160232",
-        "complementId": 1,
-        "complementName": "Aves",
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": "84b29ed57635428e10161d923dd9824ef4701819ddc022c417cdd647c217340e",
-        "speciesName": "6da1384d8aba9e50273bf26e1951e1ab4ea6633d426fe8a6954315350988b99b",
-        "speciesNomination": "6da1384d8aba9e50273bf26e1951e1ab4ea6633d426fe8a6954315350988b99b",
-        "speciesTypeName": "cbf31b0c8f40f0963d78ae7ab60088615c736f283a838c09e75d8d52f59bc59a",
-        "speciesType": "1283c251a28f2a64609941fa66f28dcc241d0e6fec4345ae5df73e900229e4ca",
-        "speciesClassName": null,
-        "speciesClass": "84b29ed57635428e10161d923dd9824ef4701819ddc022c417cdd647c217340e",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": null,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "20160"
-          },
-          {
-            "key": "number_package",
-            "data": "2016"
-          },
-          {
-            "key": "type_package",
-            "data": "Carton"
-          }
-        ],
-        "riskAssesment": {
-          "riskDecision": "NOTREQUIRED",
-          "exitRiskDecision": null,
-          "hmiDecision": null,
-          "phsiDecision": null,
-          "phsiClassification": null,
-          "phsi": null,
-          "uniqueId": "9e979d90-2608-48a0-be67-7e74016f04a3",
-          "eppoCode": null,
-          "variety": null,
-          "isWoody": null,
-          "indoorOutdoor": null,
-          "propagation": null,
-          "phsiRuleType": null
-        },
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

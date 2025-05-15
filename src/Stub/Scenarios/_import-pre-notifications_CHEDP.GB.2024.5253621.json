@@ -17,6 +17,26 @@
     "status": "VALIDATED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": {
+      "commodityResults": [
+        {
+          "riskDecision": "REQUIRED",
+          "exitRiskDecision": null,
+          "hmiDecision": null,
+          "phsiDecision": null,
+          "phsiClassification": null,
+          "phsi": null,
+          "uniqueId": "cf0d571d-bc1d-4084-84b2-937342d7d93c",
+          "eppoCode": null,
+          "variety": null,
+          "isWoody": null,
+          "indoorOutdoor": null,
+          "propagation": null,
+          "phsiRuleType": null
+        }
+      ],
+      "assessedOn": "2024-12-04T10:55:43"
+    },
     "journeyRiskCategorisation": {
       "riskLevel": "Medium",
       "riskLevelMethod": "User",
@@ -162,6 +182,74 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": false,
       "isGvmsRoute": false,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": 24500,
+        "totalNetWeight": 20000,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 2000,
+        "temperature": "Frozen",
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "HN",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": null,
+        "regionOfOrigin": null,
+        "consignedCountry": "HN",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": null,
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Shrimps of the genus Penaeus",
+            "commodityId": "03061792",
+            "complementId": 1,
+            "complementName": "Penaeus (Litopenaeus) vannamei",
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": "346776",
+            "speciesName": "Penaeus (Litopenaeus) vannamei",
+            "speciesNomination": "Penaeus (Litopenaeus) vannamei",
+            "speciesTypeName": "Farmed stock",
+            "speciesType": "20",
+            "speciesClassName": null,
+            "speciesClass": "363409",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": true
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "cf0d571d-bc1d-4084-84b2-937342d7d93c",
+            "complementID": 1,
+            "speciesID": "346776",
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "20000"
+              },
+              {
+                "key": "number_package",
+                "data": "2000"
+              },
+              {
+                "key": "type_package",
+                "data": "Carton"
+              },
+              {
+                "key": "is_catch_certificate_required",
+                "data": "false"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": true,
         "internalMarketPurpose": "Human Consumption",
@@ -379,6 +467,7 @@
       "consignmentValidations": null,
       "checkedOn": "2024-12-20T12:00:00Z",
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": "Required",
@@ -403,82 +492,7 @@
     "requestId": null,
     "isCdsFullMatched": true,
     "chedTypeVersion": 1,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": 24500,
-      "totalNetWeight": 20000,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 2000,
-      "temperature": "Frozen",
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "HN",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": null,
-      "regionOfOrigin": null,
-      "consignedCountry": "HN",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": null
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Shrimps of the genus Penaeus",
-        "commodityId": "03061792",
-        "complementId": 1,
-        "complementName": "Penaeus (Litopenaeus) vannamei",
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": "346776",
-        "speciesName": "Penaeus (Litopenaeus) vannamei",
-        "speciesNomination": "Penaeus (Litopenaeus) vannamei",
-        "speciesTypeName": "Farmed stock",
-        "speciesType": "20",
-        "speciesClassName": null,
-        "speciesClass": "363409",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": true,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "20000"
-          },
-          {
-            "key": "number_package",
-            "data": "2000"
-          },
-          {
-            "key": "type_package",
-            "data": "Carton"
-          },
-          {
-            "key": "is_catch_certificate_required",
-            "data": "false"
-          }
-        ],
-        "riskAssesment": {
-          "riskDecision": "REQUIRED",
-          "exitRiskDecision": null,
-          "hmiDecision": null,
-          "phsiDecision": null,
-          "phsiClassification": null,
-          "phsi": null,
-          "uniqueId": "cf0d571d-bc1d-4084-84b2-937342d7d93c",
-          "eppoCode": null,
-          "variety": null,
-          "isWoody": null,
-          "indoorOutdoor": null,
-          "propagation": null,
-          "phsiRuleType": null
-        },
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

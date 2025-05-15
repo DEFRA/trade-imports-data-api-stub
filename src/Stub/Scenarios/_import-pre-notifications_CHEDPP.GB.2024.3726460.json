@@ -17,6 +17,30 @@
     "status": "VALIDATED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": {
+      "commodityResults": [
+        {
+          "riskDecision": null,
+          "exitRiskDecision": null,
+          "hmiDecision": "NOTREQUIRED",
+          "phsiDecision": "REQUIRED",
+          "phsiClassification": "Reduced",
+          "phsi": {
+            "documentCheck": true,
+            "identityCheck": true,
+            "physicalCheck": true
+          },
+          "uniqueId": "40805d5b-27de-40ea-9e4f-b80d96ab874b",
+          "eppoCode": "XXXXX",
+          "variety": null,
+          "isWoody": null,
+          "indoorOutdoor": "None",
+          "propagation": "Seed",
+          "phsiRuleType": "Commodity"
+        }
+      ],
+      "assessedOn": "2024-11-29T06:00:09"
+    },
     "journeyRiskCategorisation": null,
     "isHighRiskEuImport": null,
     "partOne": {
@@ -182,6 +206,94 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": null,
       "isGvmsRoute": null,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": true,
+        "totalGrossWeight": 3667,
+        "totalNetWeight": 3530,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 80,
+        "temperature": null,
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "NL",
+        "countryOfOriginIsPodCountry": true,
+        "isLowRiskArticle72Country": false,
+        "regionOfOrigin": null,
+        "consignedCountry": "NL",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": null,
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Seeds of herbaceous plants cultivated principally for their flowers",
+            "commodityId": "12093000",
+            "complementId": 5,
+            "complementName": "plants (general)",
+            "eppoCode": "XXXXX",
+            "isWoodPackaging": null,
+            "speciesId": "10a097c5b26feee00b64b1508e70e645eeea94667b31be2db710acf36bd0ec88",
+            "speciesName": "39b788fe2f33e0289dd90ab8d000e51fda6d5d2f80c135f1e8f2e99b0d3f178f",
+            "speciesNomination": "39b788fe2f33e0289dd90ab8d000e51fda6d5d2f80c135f1e8f2e99b0d3f178f",
+            "speciesTypeName": null,
+            "speciesType": null,
+            "speciesClassName": null,
+            "speciesClass": null,
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": null
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "40805d5b-27de-40ea-9e4f-b80d96ab874b",
+            "complementID": 5,
+            "speciesID": "1436533",
+            "keyDataPair": [
+              {
+                "key": "regulatory_authority",
+                "data": "PHSI"
+              },
+              {
+                "key": "requires_test_and_trial_data",
+                "data": "true"
+              },
+              {
+                "key": "propagation",
+                "data": "Seed"
+              },
+              {
+                "key": "commodity_group",
+                "data": "Seed \u0026 Tissue Culture"
+              },
+              {
+                "key": "type_package",
+                "data": "Package"
+              },
+              {
+                "key": "netweight",
+                "data": "3530"
+              },
+              {
+                "key": "number_package",
+                "data": "80"
+              },
+              {
+                "key": "quantity",
+                "data": "3667"
+              },
+              {
+                "key": "type_quantity",
+                "data": "Kilograms"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": null,
         "internalMarketPurpose": null,
@@ -327,6 +439,38 @@
       "consignmentValidations": null,
       "checkedOn": null,
       "accompanyingDocuments": null,
+      "commodityChecks": [
+        {
+          "uniqueComplementId": "40805d5b-27de-40ea-9e4f-b80d96ab874b",
+          "checks": [
+            {
+              "type": "PHSI_DOCUMENT",
+              "status": "Compliant",
+              "reason": null,
+              "otherReason": null,
+              "isSelectedForChecks": null,
+              "hasChecksComplete": null
+            },
+            {
+              "type": "PHSI_IDENTITY",
+              "status": "Auto cleared",
+              "reason": null,
+              "otherReason": null,
+              "isSelectedForChecks": null,
+              "hasChecksComplete": true
+            },
+            {
+              "type": "PHSI_PHYSICAL",
+              "status": "Auto cleared",
+              "reason": null,
+              "otherReason": null,
+              "isSelectedForChecks": null,
+              "hasChecksComplete": true
+            }
+          ],
+          "validityPeriod": 0
+        }
+      ],
       "phsiAutoCleared": true,
       "hmiAutoCleared": true,
       "inspectionRequired": "Required",
@@ -351,106 +495,7 @@
     "requestId": null,
     "isCdsFullMatched": null,
     "chedTypeVersion": 0,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": true,
-      "totalGrossWeight": 3667,
-      "totalNetWeight": 3530,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 80,
-      "temperature": null,
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "NL",
-      "countryOfOriginIsPodCountry": true,
-      "isLowRiskArticle72Country": false,
-      "regionOfOrigin": null,
-      "consignedCountry": "NL",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": null
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Seeds of herbaceous plants cultivated principally for their flowers",
-        "commodityId": "12093000",
-        "complementId": 5,
-        "complementName": "plants (general)",
-        "eppoCode": "XXXXX",
-        "isWoodPackaging": null,
-        "speciesId": "10a097c5b26feee00b64b1508e70e645eeea94667b31be2db710acf36bd0ec88",
-        "speciesName": "39b788fe2f33e0289dd90ab8d000e51fda6d5d2f80c135f1e8f2e99b0d3f178f",
-        "speciesNomination": "39b788fe2f33e0289dd90ab8d000e51fda6d5d2f80c135f1e8f2e99b0d3f178f",
-        "speciesTypeName": null,
-        "speciesType": null,
-        "speciesClassName": null,
-        "speciesClass": null,
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": null,
-        "additionalData": [
-          {
-            "key": "regulatory_authority",
-            "data": "PHSI"
-          },
-          {
-            "key": "requires_test_and_trial_data",
-            "data": "true"
-          },
-          {
-            "key": "propagation",
-            "data": "Seed"
-          },
-          {
-            "key": "commodity_group",
-            "data": "Seed \u0026 Tissue Culture"
-          },
-          {
-            "key": "type_package",
-            "data": "Package"
-          },
-          {
-            "key": "netweight",
-            "data": "3530"
-          },
-          {
-            "key": "number_package",
-            "data": "80"
-          },
-          {
-            "key": "quantity",
-            "data": "3667"
-          },
-          {
-            "key": "type_quantity",
-            "data": "Kilograms"
-          }
-        ],
-        "riskAssesment": {
-          "riskDecision": null,
-          "exitRiskDecision": null,
-          "hmiDecision": "NOTREQUIRED",
-          "phsiDecision": "REQUIRED",
-          "phsiClassification": "Reduced",
-          "phsi": {
-            "documentCheck": true,
-            "identityCheck": true,
-            "physicalCheck": true
-          },
-          "uniqueId": "40805d5b-27de-40ea-9e4f-b80d96ab874b",
-          "eppoCode": "XXXXX",
-          "variety": null,
-          "isWoody": null,
-          "indoorOutdoor": "None",
-          "propagation": "Seed",
-          "phsiRuleType": "Commodity"
-        },
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

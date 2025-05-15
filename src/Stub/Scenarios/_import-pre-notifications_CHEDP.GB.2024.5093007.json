@@ -17,6 +17,26 @@
     "status": "VALIDATED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": {
+      "commodityResults": [
+        {
+          "riskDecision": "NOTREQUIRED",
+          "exitRiskDecision": null,
+          "hmiDecision": null,
+          "phsiDecision": null,
+          "phsiClassification": null,
+          "phsi": null,
+          "uniqueId": "e40ade9e-c29b-474f-939e-f409841c3da5",
+          "eppoCode": null,
+          "variety": null,
+          "isWoody": null,
+          "indoorOutdoor": null,
+          "propagation": null,
+          "phsiRuleType": null
+        }
+      ],
+      "assessedOn": "2024-11-04T15:52:38"
+    },
     "journeyRiskCategorisation": {
       "riskLevel": "Medium",
       "riskLevelMethod": "User",
@@ -162,6 +182,74 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": false,
       "isGvmsRoute": false,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": 18208,
+        "totalNetWeight": 13500,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 2700,
+        "temperature": "Frozen",
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "VN",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": null,
+        "regionOfOrigin": null,
+        "consignedCountry": "VN",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": null,
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "In immediate packings of a net content not exceeding 2kg",
+            "commodityId": "16052110",
+            "complementId": 1,
+            "complementName": "Penaeus vannamei",
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": "92a92b392d384d1bfa89ee2c58ec4b64fea4814a470b28c8a688c4f7d56e9290",
+            "speciesName": "84a4f966fad01744c90c84539f99dd1759befd3f5f292c8ceda271250b12bf87",
+            "speciesNomination": "84a4f966fad01744c90c84539f99dd1759befd3f5f292c8ceda271250b12bf87",
+            "speciesTypeName": null,
+            "speciesType": "245c24459f5c8395036d1490324b625a3c013f3d81a70ffa8a345718681c822f",
+            "speciesClassName": null,
+            "speciesClass": "4c8cc92bb04d27060d58b55546cbcf5dc803693df4f288d1db4b44fcf03b6499",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": null
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "e40ade9e-c29b-474f-939e-f409841c3da5",
+            "complementID": 1,
+            "speciesID": "484614",
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "13500"
+              },
+              {
+                "key": "number_package",
+                "data": "2700"
+              },
+              {
+                "key": "type_package",
+                "data": "Carton"
+              },
+              {
+                "key": "is_catch_certificate_required",
+                "data": "false"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": true,
         "internalMarketPurpose": "Human Consumption",
@@ -379,6 +467,7 @@
       "consignmentValidations": null,
       "checkedOn": "2024-11-18T21:54:00Z",
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": "Not required",
@@ -403,82 +492,7 @@
     "requestId": null,
     "isCdsFullMatched": null,
     "chedTypeVersion": 1,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": 18208,
-      "totalNetWeight": 13500,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 2700,
-      "temperature": "Frozen",
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "VN",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": null,
-      "regionOfOrigin": null,
-      "consignedCountry": "VN",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": null
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "In immediate packings of a net content not exceeding 2kg",
-        "commodityId": "16052110",
-        "complementId": 1,
-        "complementName": "Penaeus vannamei",
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": "92a92b392d384d1bfa89ee2c58ec4b64fea4814a470b28c8a688c4f7d56e9290",
-        "speciesName": "84a4f966fad01744c90c84539f99dd1759befd3f5f292c8ceda271250b12bf87",
-        "speciesNomination": "84a4f966fad01744c90c84539f99dd1759befd3f5f292c8ceda271250b12bf87",
-        "speciesTypeName": null,
-        "speciesType": "245c24459f5c8395036d1490324b625a3c013f3d81a70ffa8a345718681c822f",
-        "speciesClassName": null,
-        "speciesClass": "4c8cc92bb04d27060d58b55546cbcf5dc803693df4f288d1db4b44fcf03b6499",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": null,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "13500"
-          },
-          {
-            "key": "number_package",
-            "data": "2700"
-          },
-          {
-            "key": "type_package",
-            "data": "Carton"
-          },
-          {
-            "key": "is_catch_certificate_required",
-            "data": "false"
-          }
-        ],
-        "riskAssesment": {
-          "riskDecision": "NOTREQUIRED",
-          "exitRiskDecision": null,
-          "hmiDecision": null,
-          "phsiDecision": null,
-          "phsiClassification": null,
-          "phsi": null,
-          "uniqueId": "e40ade9e-c29b-474f-939e-f409841c3da5",
-          "eppoCode": null,
-          "variety": null,
-          "isWoody": null,
-          "indoorOutdoor": null,
-          "propagation": null,
-          "phsiRuleType": null
-        },
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

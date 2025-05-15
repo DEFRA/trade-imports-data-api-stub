@@ -17,6 +17,7 @@
     "status": "SUBMITTED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": null,
     "journeyRiskCategorisation": null,
     "isHighRiskEuImport": true,
     "partOne": {
@@ -158,6 +159,77 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": null,
       "isGvmsRoute": null,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": null,
+        "totalNetWeight": null,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 0,
+        "temperature": null,
+        "numberOfAnimals": 1,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "BE",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": null,
+        "regionOfOrigin": null,
+        "consignedCountry": null,
+        "animalsCertifiedAs": "Registered",
+        "commodityIntendedFor": null,
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Live horses, asses, mules and hinnies",
+            "commodityId": "0101",
+            "complementId": 1,
+            "complementName": "Equus caballus",
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": "a9bc612b25e0f1fa60de92e7bf33c7343f3d30d20db57c27657334d4e65b2a36",
+            "speciesName": "caefd63e72a5967d044ad7fefa59ac3c4b619dbc8cc04d0337d29b1e4737de22",
+            "speciesNomination": "caefd63e72a5967d044ad7fefa59ac3c4b619dbc8cc04d0337d29b1e4737de22",
+            "speciesTypeName": null,
+            "speciesType": "245c24459f5c8395036d1490324b625a3c013f3d81a70ffa8a345718681c822f",
+            "speciesClassName": null,
+            "speciesClass": "a9bc612b25e0f1fa60de92e7bf33c7343f3d30d20db57c27657334d4e65b2a36",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": null
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "0725b2d1-40f9-40b2-8b52-fd313aabfeb1",
+            "complementID": 1,
+            "speciesID": "147603",
+            "keyDataPair": [
+              {
+                "key": "number_package",
+                "data": "0"
+              },
+              {
+                "key": "number_animal",
+                "data": "1"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": [
+              {
+                "speciesNumber": 1,
+                "data": {
+                  "horse_name": "SHEERAN WL",
+                  "microchip": "958000010356220",
+                  "passport": "826002160878795"
+                },
+                "isPlaceOfDestinationThePermanentAddress": null,
+                "permanentAddress": null
+              }
+            ]
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": null,
         "internalMarketPurpose": "Registered Horses",
@@ -367,6 +439,7 @@
       ],
       "checkedOn": null,
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": null,
@@ -416,60 +489,7 @@
     "requestId": null,
     "isCdsFullMatched": null,
     "chedTypeVersion": 1,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": null,
-      "totalNetWeight": null,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 0,
-      "temperature": null,
-      "numberOfAnimals": 1,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "BE",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": null,
-      "regionOfOrigin": null,
-      "consignedCountry": null,
-      "animalsCertifiedAs": "Registered",
-      "commodityIntendedFor": null
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Live horses, asses, mules and hinnies",
-        "commodityId": "0101",
-        "complementId": 1,
-        "complementName": "Equus caballus",
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": "a9bc612b25e0f1fa60de92e7bf33c7343f3d30d20db57c27657334d4e65b2a36",
-        "speciesName": "caefd63e72a5967d044ad7fefa59ac3c4b619dbc8cc04d0337d29b1e4737de22",
-        "speciesNomination": "caefd63e72a5967d044ad7fefa59ac3c4b619dbc8cc04d0337d29b1e4737de22",
-        "speciesTypeName": null,
-        "speciesType": "245c24459f5c8395036d1490324b625a3c013f3d81a70ffa8a345718681c822f",
-        "speciesClassName": null,
-        "speciesClass": "a9bc612b25e0f1fa60de92e7bf33c7343f3d30d20db57c27657334d4e65b2a36",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": null,
-        "additionalData": [
-          {
-            "key": "number_package",
-            "data": "0"
-          },
-          {
-            "key": "number_animal",
-            "data": "1"
-          }
-        ],
-        "riskAssesment": null,
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"
