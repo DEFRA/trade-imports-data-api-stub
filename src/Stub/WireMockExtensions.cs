@@ -31,10 +31,10 @@ public static class WireMockExtensions
         }
     }
 
-    public static void StubUtilityEndpoints(this WireMockServer wireMock)
+    public static void StubAllEndpointsAvailable(this WireMockServer wireMock)
     {
         wireMock
-            .Given(Request.Create().WithPath("/utility/all-scenarios").UsingGet())
+            .Given(Request.Create().WithPath("/").UsingGet())
             .RespondWith(
                 Response
                     .Create()
