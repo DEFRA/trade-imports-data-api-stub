@@ -26,13 +26,9 @@ The solution requires:
 
 1. Run the application via Docker:
    ```
-   docker build -t trade-imports-data-api-stub .
-   docker run -p 8085:8085 trade-imports-data-api-stub
+   docker compose up
    ```
-2. Navigate to http://localhost:8085 and see:
-   ```
-   {"Status":"No matching mapping found"}
-   ```
+2. Navigate to http://localhost:8085 and see all endpoints supported
 
 ## Responses
 
