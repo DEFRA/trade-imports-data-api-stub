@@ -69,7 +69,6 @@
           "checks": [
             {
               "checkCode": "H218",
-              "departmentCode": null,
               "decisionCode": "X00",
               "decisionsValidUntil": null,
               "decisionReasons": [
@@ -79,7 +78,6 @@
             },
             {
               "checkCode": "H223",
-              "departmentCode": null,
               "decisionCode": "X00",
               "decisionsValidUntil": null,
               "decisionReasons": [

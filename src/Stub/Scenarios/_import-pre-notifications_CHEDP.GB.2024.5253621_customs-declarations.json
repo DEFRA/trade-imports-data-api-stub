@@ -58,7 +58,6 @@
           "checks": [
             {
               "checkCode": "H222",
-              "departmentCode": null,
               "decisionCode": "C03",
               "decisionsValidUntil": null,
               "decisionReasons": [],
