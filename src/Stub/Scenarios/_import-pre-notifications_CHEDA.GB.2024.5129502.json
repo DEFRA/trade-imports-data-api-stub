@@ -17,6 +17,7 @@
     "status": "VALIDATED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": null,
     "journeyRiskCategorisation": null,
     "isHighRiskEuImport": false,
     "partOne": {
@@ -157,6 +158,66 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": null,
       "isGvmsRoute": null,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": null,
+        "totalNetWeight": null,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 2,
+        "temperature": null,
+        "numberOfAnimals": 2,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "ZA",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": null,
+        "regionOfOrigin": null,
+        "consignedCountry": null,
+        "animalsCertifiedAs": "Other",
+        "commodityIntendedFor": null,
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Other",
+            "commodityId": "01061900",
+            "complementId": 1,
+            "complementName": "Canis familiaris",
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": "648c38bbad42acd8d666607028d34590e661a0222b95f0f1baecff5f165fdc7a",
+            "speciesName": "ef172b6bc549336564143def933a8cf264fe4e43d3497afcf27f0d251a9e0843",
+            "speciesNomination": "ef172b6bc549336564143def933a8cf264fe4e43d3497afcf27f0d251a9e0843",
+            "speciesTypeName": null,
+            "speciesType": "245c24459f5c8395036d1490324b625a3c013f3d81a70ffa8a345718681c822f",
+            "speciesClassName": null,
+            "speciesClass": "228f17d3503fac506ffcf9086e18c2d7d91c06d6fca641191089183da39a80dd",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": null
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "a161bb2b-096c-4500-bda5-d471ee47fae3",
+            "complementID": 1,
+            "speciesID": "129518",
+            "keyDataPair": [
+              {
+                "key": "number_package",
+                "data": "2"
+              },
+              {
+                "key": "number_animal",
+                "data": "2"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": null,
         "internalMarketPurpose": null,
@@ -376,6 +437,7 @@
       "consignmentValidations": null,
       "checkedOn": null,
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": null,
@@ -393,60 +455,7 @@
     "requestId": null,
     "isCdsFullMatched": null,
     "chedTypeVersion": 1,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": null,
-      "totalNetWeight": null,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 2,
-      "temperature": null,
-      "numberOfAnimals": 2,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "ZA",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": null,
-      "regionOfOrigin": null,
-      "consignedCountry": null,
-      "animalsCertifiedAs": "Other",
-      "commodityIntendedFor": null
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Other",
-        "commodityId": "01061900",
-        "complementId": 1,
-        "complementName": "Canis familiaris",
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": "648c38bbad42acd8d666607028d34590e661a0222b95f0f1baecff5f165fdc7a",
-        "speciesName": "ef172b6bc549336564143def933a8cf264fe4e43d3497afcf27f0d251a9e0843",
-        "speciesNomination": "ef172b6bc549336564143def933a8cf264fe4e43d3497afcf27f0d251a9e0843",
-        "speciesTypeName": null,
-        "speciesType": "245c24459f5c8395036d1490324b625a3c013f3d81a70ffa8a345718681c822f",
-        "speciesClassName": null,
-        "speciesClass": "228f17d3503fac506ffcf9086e18c2d7d91c06d6fca641191089183da39a80dd",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": null,
-        "additionalData": [
-          {
-            "key": "number_package",
-            "data": "2"
-          },
-          {
-            "key": "number_animal",
-            "data": "2"
-          }
-        ],
-        "riskAssesment": null,
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

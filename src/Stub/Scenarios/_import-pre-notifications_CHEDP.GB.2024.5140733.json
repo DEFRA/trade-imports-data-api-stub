@@ -17,6 +17,26 @@
     "status": "VALIDATED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": {
+      "commodityResults": [
+        {
+          "riskDecision": "INCONCLUSIVE",
+          "exitRiskDecision": null,
+          "hmiDecision": null,
+          "phsiDecision": null,
+          "phsiClassification": null,
+          "phsi": null,
+          "uniqueId": "87f8fe67-141d-40e6-be89-27ceb4e214e9",
+          "eppoCode": null,
+          "variety": null,
+          "isWoody": null,
+          "indoorOutdoor": null,
+          "propagation": null,
+          "phsiRuleType": null
+        }
+      ],
+      "assessedOn": "2024-11-13T15:50:13"
+    },
     "journeyRiskCategorisation": {
       "riskLevel": "Medium",
       "riskLevelMethod": "User",
@@ -161,6 +181,70 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": null,
       "isGvmsRoute": false,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": 10556.4,
+        "totalNetWeight": 10336,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 380,
+        "temperature": "Frozen",
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "NZ",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": null,
+        "regionOfOrigin": null,
+        "consignedCountry": "NZ",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": null,
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Of lamb",
+            "commodityId": "02044310",
+            "complementId": 1,
+            "complementName": "Ovis aries",
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": "d69faae9b2697beadeb950490d2bd9acc3ad54b0397bc3e6f7af7d374342df55",
+            "speciesName": "0e26f5c7b9064ec78492097f9b0908bc49f358efac812e6fa0a6d13ce67bafaf",
+            "speciesNomination": "0e26f5c7b9064ec78492097f9b0908bc49f358efac812e6fa0a6d13ce67bafaf",
+            "speciesTypeName": "c798140abbebcbba6ddccdd9aa4064311a8514d93ea32d5a35403f01cfdb2c2a",
+            "speciesType": "6ac9d1c824be1dd8a4c9c19a476fa56f70387ff078105f21e4a7aa4be3bdc042",
+            "speciesClassName": null,
+            "speciesClass": "38d5d0fa407fa80643b805fadac3e1cc8e946a80bde328ab2a12d0360712fc8c",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": true
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "87f8fe67-141d-40e6-be89-27ceb4e214e9",
+            "complementID": 1,
+            "speciesID": "167408",
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "10336"
+              },
+              {
+                "key": "number_package",
+                "data": "380"
+              },
+              {
+                "key": "type_package",
+                "data": "Carton"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": true,
         "internalMarketPurpose": "Human Consumption",
@@ -402,6 +486,7 @@
       "consignmentValidations": null,
       "checkedOn": "2024-11-20T17:12:00Z",
       "accompanyingDocuments": null,
+      "commodityChecks": null,
       "phsiAutoCleared": null,
       "hmiAutoCleared": null,
       "inspectionRequired": "Required",
@@ -426,78 +511,7 @@
     "requestId": null,
     "isCdsFullMatched": true,
     "chedTypeVersion": 1,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": 10556.4,
-      "totalNetWeight": 10336,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 380,
-      "temperature": "Frozen",
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "NZ",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": null,
-      "regionOfOrigin": null,
-      "consignedCountry": "NZ",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": null
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Of lamb",
-        "commodityId": "02044310",
-        "complementId": 1,
-        "complementName": "Ovis aries",
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": "d69faae9b2697beadeb950490d2bd9acc3ad54b0397bc3e6f7af7d374342df55",
-        "speciesName": "0e26f5c7b9064ec78492097f9b0908bc49f358efac812e6fa0a6d13ce67bafaf",
-        "speciesNomination": "0e26f5c7b9064ec78492097f9b0908bc49f358efac812e6fa0a6d13ce67bafaf",
-        "speciesTypeName": "c798140abbebcbba6ddccdd9aa4064311a8514d93ea32d5a35403f01cfdb2c2a",
-        "speciesType": "6ac9d1c824be1dd8a4c9c19a476fa56f70387ff078105f21e4a7aa4be3bdc042",
-        "speciesClassName": null,
-        "speciesClass": "38d5d0fa407fa80643b805fadac3e1cc8e946a80bde328ab2a12d0360712fc8c",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": true,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "10336"
-          },
-          {
-            "key": "number_package",
-            "data": "380"
-          },
-          {
-            "key": "type_package",
-            "data": "Carton"
-          }
-        ],
-        "riskAssesment": {
-          "riskDecision": "INCONCLUSIVE",
-          "exitRiskDecision": null,
-          "hmiDecision": null,
-          "phsiDecision": null,
-          "phsiClassification": null,
-          "phsi": null,
-          "uniqueId": "87f8fe67-141d-40e6-be89-27ceb4e214e9",
-          "eppoCode": null,
-          "variety": null,
-          "isWoody": null,
-          "indoorOutdoor": null,
-          "propagation": null,
-          "phsiRuleType": null
-        },
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"

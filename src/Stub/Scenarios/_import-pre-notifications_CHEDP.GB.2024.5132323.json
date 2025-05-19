@@ -25,6 +25,7 @@
     "status": "SUBMITTED",
     "splitConsignment": null,
     "childNotification": null,
+    "riskAssessment": null,
     "journeyRiskCategorisation": {
       "riskLevel": "Medium",
       "riskLevelMethod": "User",
@@ -170,6 +171,111 @@
       "isPlaceOfDestinationThePermanentAddress": null,
       "isCatchCertificateRequired": null,
       "isGvmsRoute": true,
+      "commodities": {
+        "gmsDeclarationAccepted": null,
+        "consignedCountryInChargeGroup": null,
+        "totalGrossWeight": 2049.5,
+        "totalNetWeight": 1964,
+        "totalGrossVolume": null,
+        "totalGrossVolumeUnit": null,
+        "numberOfPackages": 135,
+        "temperature": "Chilled",
+        "numberOfAnimals": null,
+        "includeNonAblactedAnimals": false,
+        "countryOfOrigin": "NL",
+        "countryOfOriginIsPodCountry": null,
+        "isLowRiskArticle72Country": false,
+        "regionOfOrigin": "NL-0",
+        "consignedCountry": "NL",
+        "animalsCertifiedAs": null,
+        "commodityIntendedFor": null,
+        "commodityComplement": [
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Salted or in brine, Of domestic swine",
+            "commodityId": "02101211",
+            "complementId": 3,
+            "complementName": "Suidae",
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": "f24354b5637edf5a00d9b7fcd7d757706f2c88993c0395c0bcc7702fb7c0cb92",
+            "speciesName": "36883c437034910bfe5eec93502a0fdaae0bdd22bc54835e2d940f6ec9a0f16c",
+            "speciesNomination": "36883c437034910bfe5eec93502a0fdaae0bdd22bc54835e2d940f6ec9a0f16c",
+            "speciesTypeName": "e3aea5769a28f95a8683bd337e3cf911c7441cf0c9cb34a98419a757084a86a7",
+            "speciesType": "c6f3ac57944a531490cd39902d0f777715fd005efac9a30622d5f5205e7f6894",
+            "speciesClassName": null,
+            "speciesClass": "f24354b5637edf5a00d9b7fcd7d757706f2c88993c0395c0bcc7702fb7c0cb92",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": null
+          },
+          {
+            "uniqueComplementId": null,
+            "commodityDescription": "Loins and cuts thereof, Salted or in brine, Of domestic swine",
+            "commodityId": "02101940",
+            "complementId": 4,
+            "complementName": "Suidae",
+            "eppoCode": null,
+            "isWoodPackaging": null,
+            "speciesId": "4b38e2da11910625dc5f3fc2b9bf86afbba63c88ff9384c3d79882b733782c49",
+            "speciesName": "36883c437034910bfe5eec93502a0fdaae0bdd22bc54835e2d940f6ec9a0f16c",
+            "speciesNomination": "36883c437034910bfe5eec93502a0fdaae0bdd22bc54835e2d940f6ec9a0f16c",
+            "speciesTypeName": "e3aea5769a28f95a8683bd337e3cf911c7441cf0c9cb34a98419a757084a86a7",
+            "speciesType": "c6f3ac57944a531490cd39902d0f777715fd005efac9a30622d5f5205e7f6894",
+            "speciesClassName": null,
+            "speciesClass": "679b028b890ed80caec9694b23e36caed003034bc53f8055dbb4410dbf9cbd70",
+            "speciesFamilyName": null,
+            "speciesFamily": null,
+            "speciesCommonName": null,
+            "isCdsMatched": null
+          }
+        ],
+        "complementParameterSet": [
+          {
+            "uniqueComplementID": "295a8cda-4dc3-43fc-a2fd-93a8c07fa568",
+            "complementID": 3,
+            "speciesID": "64200",
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "1048.2"
+              },
+              {
+                "key": "number_package",
+                "data": "45"
+              },
+              {
+                "key": "type_package",
+                "data": "Carton"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          },
+          {
+            "uniqueComplementID": "0bc96d78-f88a-424f-9fea-606d2c8439d7",
+            "complementID": 4,
+            "speciesID": "492124",
+            "keyDataPair": [
+              {
+                "key": "netweight",
+                "data": "915.8"
+              },
+              {
+                "key": "number_package",
+                "data": "90"
+              },
+              {
+                "key": "type_package",
+                "data": "Carton"
+              }
+            ],
+            "catchCertificates": null,
+            "identifiers": null
+          }
+        ]
+      },
       "purpose": {
         "conformsToEU": true,
         "internalMarketPurpose": "Human Consumption",
@@ -341,100 +447,7 @@
     "requestId": null,
     "isCdsFullMatched": null,
     "chedTypeVersion": 1,
-    "isGMRMatched": null,
-    "commoditiesSummary": {
-      "gmsDeclarationAccepted": null,
-      "consignedCountryInChargeGroup": null,
-      "totalGrossWeight": 2049.5,
-      "totalNetWeight": 1964,
-      "totalGrossVolume": null,
-      "totalGrossVolumeUnit": null,
-      "numberOfPackages": 135,
-      "temperature": "Chilled",
-      "numberOfAnimals": null,
-      "includeNonAblactedAnimals": false,
-      "countryOfOrigin": "NL",
-      "countryOfOriginIsPodCountry": null,
-      "isLowRiskArticle72Country": false,
-      "regionOfOrigin": "NL-0",
-      "consignedCountry": "NL",
-      "animalsCertifiedAs": null,
-      "commodityIntendedFor": null
-    },
-    "commodities": [
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Salted or in brine, Of domestic swine",
-        "commodityId": "02101211",
-        "complementId": 3,
-        "complementName": "Suidae",
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": "f24354b5637edf5a00d9b7fcd7d757706f2c88993c0395c0bcc7702fb7c0cb92",
-        "speciesName": "36883c437034910bfe5eec93502a0fdaae0bdd22bc54835e2d940f6ec9a0f16c",
-        "speciesNomination": "36883c437034910bfe5eec93502a0fdaae0bdd22bc54835e2d940f6ec9a0f16c",
-        "speciesTypeName": "e3aea5769a28f95a8683bd337e3cf911c7441cf0c9cb34a98419a757084a86a7",
-        "speciesType": "c6f3ac57944a531490cd39902d0f777715fd005efac9a30622d5f5205e7f6894",
-        "speciesClassName": null,
-        "speciesClass": "f24354b5637edf5a00d9b7fcd7d757706f2c88993c0395c0bcc7702fb7c0cb92",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": null,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "1048.2"
-          },
-          {
-            "key": "number_package",
-            "data": "45"
-          },
-          {
-            "key": "type_package",
-            "data": "Carton"
-          }
-        ],
-        "riskAssesment": null,
-        "checks": null
-      },
-      {
-        "uniqueComplementId": null,
-        "commodityDescription": "Loins and cuts thereof, Salted or in brine, Of domestic swine",
-        "commodityId": "02101940",
-        "complementId": 4,
-        "complementName": "Suidae",
-        "eppoCode": null,
-        "isWoodPackaging": null,
-        "speciesId": "4b38e2da11910625dc5f3fc2b9bf86afbba63c88ff9384c3d79882b733782c49",
-        "speciesName": "36883c437034910bfe5eec93502a0fdaae0bdd22bc54835e2d940f6ec9a0f16c",
-        "speciesNomination": "36883c437034910bfe5eec93502a0fdaae0bdd22bc54835e2d940f6ec9a0f16c",
-        "speciesTypeName": "e3aea5769a28f95a8683bd337e3cf911c7441cf0c9cb34a98419a757084a86a7",
-        "speciesType": "c6f3ac57944a531490cd39902d0f777715fd005efac9a30622d5f5205e7f6894",
-        "speciesClassName": null,
-        "speciesClass": "679b028b890ed80caec9694b23e36caed003034bc53f8055dbb4410dbf9cbd70",
-        "speciesFamilyName": null,
-        "speciesFamily": null,
-        "speciesCommonName": null,
-        "isCdsMatched": null,
-        "additionalData": [
-          {
-            "key": "netweight",
-            "data": "915.8"
-          },
-          {
-            "key": "number_package",
-            "data": "90"
-          },
-          {
-            "key": "type_package",
-            "data": "Carton"
-          }
-        ],
-        "riskAssesment": null,
-        "checks": null
-      }
-    ]
+    "isGMRMatched": null
   },
   "created": "2025-02-21T13:28:39.129Z",
   "updated": "2025-02-21T13:28:40.129Z"
