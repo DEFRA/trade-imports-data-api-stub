@@ -166,7 +166,6 @@
           "checks": [
             {
               "checkCode": "H223",
-              "departmentCode": null,
               "decisionCode": "X00",
               "decisionsValidUntil": null,
               "decisionReasons": [
@@ -181,7 +180,6 @@
           "checks": [
             {
               "checkCode": "H223",
-              "departmentCode": null,
               "decisionCode": "C03",
               "decisionsValidUntil": null,
               "decisionReasons": [],
@@ -194,7 +192,6 @@
           "checks": [
             {
               "checkCode": "H223",
-              "departmentCode": null,
               "decisionCode": "X00",
               "decisionsValidUntil": null,
               "decisionReasons": [
@@ -209,7 +206,6 @@
           "checks": [
             {
               "checkCode": "H223",
-              "departmentCode": null,
               "decisionCode": "X00",
               "decisionsValidUntil": null,
               "decisionReasons": [
@@ -224,7 +220,6 @@
           "checks": [
             {
               "checkCode": "H223",
-              "departmentCode": null,
               "decisionCode": "X00",
               "decisionsValidUntil": null,
               "decisionReasons": [
