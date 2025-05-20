@@ -23,6 +23,10 @@ Given an empty Mongo DB, import the data as follows:
 1. Import clearance requests via `ClearanceRequestTests`.
 2. Import finalisations via the `FinalisationTests`.
 
+### 03-GMR
+
+1. Import GMRs via 'GmrTests'.
+
 ## Update stubs
 
 See tests within the `Stubs` folder.
