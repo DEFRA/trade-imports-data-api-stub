@@ -61,11 +61,29 @@ public class SaveTests
             {
                 var jsonNode = JsonNode.Parse(json)!;
 
-                foreach (var node in jsonNode.AsArray())
+                foreach (var node in jsonNode["customsDeclarations"]!.AsArray())
                 {
                     AssertPropertyAndUpdate(node!, ["created"], created);
                     AssertPropertyAndUpdate(node!, ["updated"], updated);
                     AssertPropertyAndUpdate(node!, ["clearanceDecision", "timestamp"], timestamp);
+                }
+
+                await File.WriteAllTextAsync(
+                    $"Stubs/{uri.Replace("/", "_")}.json",
+                    jsonNode.ToJsonString(s_jsonOptions)
+                );
+            }
+            
+            uri = $"/import-pre-notifications/{ched}/gmrs";
+            json = await GetDocument(client, uri);
+            if (!string.IsNullOrWhiteSpace(json))
+            {
+                var jsonNode = JsonNode.Parse(json)!;
+
+                foreach (var node in jsonNode["gmrs"]!.AsArray())
+                {
+                    AssertPropertyAndUpdate(node!, ["created"], created);
+                    AssertPropertyAndUpdate(node!, ["updated"], updated);
                 }
 
                 await File.WriteAllTextAsync(

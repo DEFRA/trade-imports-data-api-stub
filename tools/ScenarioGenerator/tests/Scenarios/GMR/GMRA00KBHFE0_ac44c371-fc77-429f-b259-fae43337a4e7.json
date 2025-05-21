@@ -1,29 +1,29 @@
 {
-  "plannedCrossing": {
-    "routeId": "109",
-    "localDateTimeOfDeparture": "2024-11-11T14:45"
+  "PlannedCrossing": {
+    "RouteId": "109",
+    "LocalDateTimeOfDeparture": "2024-11-11T14:45"
   },
-  "gmrId": "GMRA00KBHFE0",
-  "vehicleRegNum": "241SO1061",
-  "updatedDateTime": "2024-11-11T17:34:50.774Z",
-  "declarations": {
-    "transits": [
+  "GmrId": "GMRA00KBHFE0",
+  "VehicleRegNum": "241SO1061",
+  "UpdatedDateTime": "2024-11-11T17:34:50.774Z",
+  "Declarations": {
+    "Transits": [
       {
-        "id": "24IEDUB10010972672"
+        "Id": "24IEDUB10010972672"
       }
     ]
   },
-  "inspectionRequired": false,
-  "actualCrossing": {
-    "routeId": "32",
-    "localDateTimeOfArrival": "2024-11-11T18:20"
+  "InspectionRequired": false,
+  "ActualCrossing": {
+    "RouteId": "32",
+    "LocalDateTimeOfArrival": "2024-11-11T18:20"
   },
-  "haulierEORI": "GB074694771000",
-  "checkedInCrossing": {
-    "routeId": "32",
-    "localDateTimeOfArrival": "2024-11-11T18:20"
+  "HaulierEori": "GB074694771000",
+  "CheckedInCrossing": {
+    "RouteId": "32",
+    "LocalDateTimeOfArrival": "2024-11-11T18:20"
   },
-  "state": "COMPLETED",
-  "direction": "UK_INBOUND",
-  "isUnaccompanied": false
+  "State": "COMPLETED",
+  "Direction": "UK_INBOUND",
+  "IsUnaccompanied": false
 }
