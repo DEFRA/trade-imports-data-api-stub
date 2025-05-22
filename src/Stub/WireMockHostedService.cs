@@ -37,6 +37,7 @@ public class WireMockHostedService(
     private void ConfigureStubbedData()
     {
         _wireMockServer?.StubAllScenarios(logger);
+        _wireMockServer?.StubUtilityUpdatesEndpoint(logger);
         _wireMockServer?.StubAllEndpointsAvailable();
     }
 

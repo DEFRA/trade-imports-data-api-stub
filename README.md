@@ -34,7 +34,20 @@ The solution requires:
 
 See the Scenarios folder for all available responses. 
 
-All endpoints currently active can be seen via http://localhost:8085/utility/all-scenarios.
+All endpoints currently active can be seen via http://localhost:8085/.
+
+## Generating endpoints
+
+See the ScenarioGenerator in the tools folder and follow the [README](tools/ScenarioGenerator/tests/README.md) for how scenarios should be generated.
+
+## Utility endpoints
+
+A utility endpoint has been provided that will generate the import pre notification updates content based on the import notifications available in the Scenarios folder. Please use this if you want to update the stub response for import pre notification updates.
+```http request
+http://localhost:8085/utility/import-pre-notification-updates
+```
+
+Copy the output and override [_import-pre-notification-updates.json](src/Stub/Scenarios/_import-pre-notification-updates.json).
 
 ## Development
 
