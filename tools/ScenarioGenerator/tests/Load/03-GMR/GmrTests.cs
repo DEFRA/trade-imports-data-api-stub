@@ -4,7 +4,10 @@ using Xunit.Abstractions;
 namespace Defra.ScenarioGenerator.Tests.Load._03_GMR;
 
 public class GmrTests(ITestOutputHelper testOutputHelper)
-    : ServiceBusTestBase("defra.trade.dmp.outputgmrs.dev.1001.topic", "defra.trade.dmp.btms-ingest.dev.1001.subscription")
+    : ServiceBusTestBase(
+        "defra.trade.dmp.outputgmrs.dev.1001.topic",
+        "defra.trade.dmp.btms-ingest.dev.1001.subscription"
+    )
 {
     private const string GmrId = ""; // "specific GMR to import";
 

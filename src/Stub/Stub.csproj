@@ -13,7 +13,4 @@
   <ItemGroup>
     <EmbeddedResource Include="Scenarios\*.json" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Scenarios\" />
-  </ItemGroup>
 </Project>
