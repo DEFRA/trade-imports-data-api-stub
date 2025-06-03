@@ -15,6 +15,14 @@ public static partial class WireMockExtensions
 {
     private static Type Anchor => typeof(WireMockExtensions);
 
+    public static void StubHealth(this WireMockServer wireMock)
+    {
+        var response = Response.Create().WithStatusCode(StatusCodes.Status200OK);
+        var request = Request.Create().WithPath("/health").UsingGet();
+
+        wireMock.Given(request).RespondWith(response);
+    }
+
     public static void StubAllScenarios<T>(this WireMockServer wireMock, ILogger<T> logger)
     {
         var scenarios = GetAllScenariosStubs();
