@@ -31,7 +31,7 @@ public class SaveTests
 
         const string created = "2025-02-21T13:28:39.129Z";
         const string updated = "2025-02-21T13:28:40.129Z";
-        const string timestamp = "2025-02-21T13:28:41.129Z";
+        const string decisionCreated = "2025-02-21T13:28:41.129Z";
 
         foreach (var ched in cheds)
         {
@@ -65,7 +65,7 @@ public class SaveTests
                 {
                     AssertPropertyAndUpdate(node!, ["created"], created);
                     AssertPropertyAndUpdate(node!, ["updated"], updated);
-                    AssertPropertyAndUpdate(node!, ["clearanceDecision", "timestamp"], timestamp);
+                    AssertPropertyAndUpdate(node!, ["clearanceDecision", "created"], decisionCreated);
                 }
 
                 await File.WriteAllTextAsync(
