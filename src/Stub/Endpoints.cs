@@ -1,22 +1,88 @@
+using System.Diagnostics.CodeAnalysis;
+using System.Net.Mime;
+using System.Text.Json.Nodes;
+using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Mvc;
+
 namespace Defra.TradeImportsDataApiStub.Stub;
 
+[ExcludeFromCodeCoverage]
 public static class Endpoints
 {
-    public static class ImportNotifications
+    private const string NotificationsRoot = "import-pre-notifications/{ched}";
+
+    public static void MapEndpoints(this IEndpointRouteBuilder app)
     {
-        public static string Get(string? chedReferenceNumber = null) =>
-            $"/api/import-notifications{(chedReferenceNumber is null ? string.Empty : $"/{chedReferenceNumber}")}";
+        app.MapGet("import-pre-notifications/{ched}", (string ched) => GetNotification(ched));
+
+        app.MapGet(
+            $"{NotificationsRoot}/customs-declarations",
+            (string ched) => GetNotification(ched, "_customs-declarations")
+        );
+
+        app.MapGet($"{NotificationsRoot}/gmrs", (string ched) => GetNotification(ched, "_gmrs"));
+
+        app.MapGet("/import-pre-notification-updates", GetUpdates);
     }
 
-    public static class Movements
+    private static readonly Regex IncludeInUpdatesEndpoint = new(
+        @"^.*\d{7}\.json$",
+        RegexOptions.Compiled
+    );
+
+    private static IResult GetNotification(string ched, string? suffix = "")
     {
-        public static string Get(string? mrn = null) =>
-            $"/api/movements{(mrn is null ? string.Empty : $"/{mrn}")}";
+        try
+        {
+            return Results.Content(
+                EmbeddedStubData.GetBody($"_import-pre-notifications_{ched}{suffix}.json"),
+                MediaTypeNames.Application.Json
+            );
+        }
+        catch (InvalidOperationException)
+        {
+            return Results.NotFound();
+        }
     }
 
-    public static class Gmrs
+    private static Updates GetUpdates(
+        [FromQuery] string[]? type,
+        [FromQuery] string[]? pointOfEntry
+    )
     {
-        public static string Get(string? gmrId = null) =>
-            $"/api/gmrs{(gmrId is null ? string.Empty : $"/{gmrId}")}";
+        var updates = EmbeddedStubData
+            .GetAllScenariosStubs()
+            .Where(s => IncludeInUpdatesEndpoint.IsMatch(s))
+            .Select(s => JsonNode.Parse(EmbeddedStubData.GetBody(s))!)
+            .Where(j =>
+                IncludeNotification(
+                    type,
+                    j["importPreNotification"]!["importNotificationType"]!.GetValue<string>()
+                )
+                && IncludeNotification(
+                    pointOfEntry,
+                    j["importPreNotification"]!["partOne"]!["pointOfEntry"]!.GetValue<string>()
+                )
+            )
+            .Select(j => new Update(
+                j["importPreNotification"]!["referenceNumber"]!.GetValue<string>(),
+                j["updated"]!.GetValue<DateTime>()
+            ));
+
+        return new Updates(updates.ToArray());
+
+        bool IncludeNotification(string[]? queryValues, string value) =>
+            queryValues is null || queryValues.Length == 0 || queryValues.Contains(value);
     }
+
+    private record Updates(
+        [property: JsonPropertyName("importPreNotificationUpdates")]
+            Update[] ImportPreNotificationUpdates
+    );
+
+    private record Update(
+        [property: JsonPropertyName("referenceNumber")] string ReferenceNumber,
+        [property: JsonPropertyName("updated")] DateTime Updated
+    );
 }
