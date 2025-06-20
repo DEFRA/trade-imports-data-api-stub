@@ -48,7 +48,9 @@ public static class Endpoints
 
     private static Updates GetUpdates(
         [FromQuery] string[]? type,
-        [FromQuery] string[]? pointOfEntry
+        [FromQuery] string[]? pointOfEntry,
+        [FromQuery] int page = 1,
+        [FromQuery] int pageSize = 100
     )
     {
         var updates = EmbeddedStubData
@@ -68,9 +70,15 @@ public static class Endpoints
             .Select(j => new Update(
                 j["importPreNotification"]!["referenceNumber"]!.GetValue<string>(),
                 j["updated"]!.GetValue<DateTime>()
-            ));
+            ))
+            .ToArray();
 
-        return new Updates(updates.ToArray());
+        return new Updates(
+            updates.Page(page, pageSize).ToArray(),
+            Total: updates.Length,
+            PageSize: pageSize,
+            Page: page
+        );
 
         bool IncludeNotification(string[]? queryValues, string value) =>
             queryValues is null || queryValues.Length == 0 || queryValues.Contains(value);
@@ -78,11 +86,20 @@ public static class Endpoints
 
     private record Updates(
         [property: JsonPropertyName("importPreNotificationUpdates")]
-            Update[] ImportPreNotificationUpdates
+            Update[] ImportPreNotificationUpdates,
+        [property: JsonPropertyName("total")] int Total,
+        [property: JsonPropertyName("pageSize")] int PageSize,
+        [property: JsonPropertyName("page")] int Page
     );
 
     private record Update(
         [property: JsonPropertyName("referenceNumber")] string ReferenceNumber,
         [property: JsonPropertyName("updated")] DateTime Updated
     );
+
+    private static IEnumerable<TSource> Page<TSource>(
+        this IEnumerable<TSource> source,
+        int page,
+        int pageSize
+    ) => source.Skip((page - 1) * pageSize).Take(pageSize);
 }
