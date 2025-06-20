@@ -1,36 +1,14 @@
-using Defra.TradeImportsDataApiStub.Stub.Configuration;
+using Defra.TradeImportsDataApiStub.Stub;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Defra.TradeImportsDataApiStub.Stub;
+var builder = WebApplication.CreateBuilder(args);
 
-public static class Program
-{
-    public static void Main(string[] args)
-    {
-        CreateHostBuilder(args).Build().Run();
-    }
+builder.Services.AddLogging(logging => logging.AddConsole().AddDebug());
+builder.Services.AddHealthChecks();
 
-    private static IHostBuilder CreateHostBuilder(string[] args)
-    {
-        return Host.CreateDefaultBuilder(args)
-            .ConfigureServices((_, services) => ConfigureServices(services));
-    }
-
-    private static void ConfigureServices(IServiceCollection services)
-    {
-        services.AddLogging(logging => logging.AddConsole().AddDebug());
-
-        services
-            .AddOptions<StubOptions>()
-            .BindConfiguration("Stub")
-            .ValidateDataAnnotations()
-            .ValidateOnStart();
-
-        services.AddSingleton<WireMockHostedService>();
-        services.AddHostedService<WireMockHostedService>(sp =>
-            sp.GetRequiredService<WireMockHostedService>()
-        );
-    }
-}
+var app = builder.Build();
+app.MapHealthChecks("/health");
+app.MapEndpoints();
+app.Run();
