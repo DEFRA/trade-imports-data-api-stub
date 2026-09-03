@@ -34,4 +34,5 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 EXPOSE 8085
+USER app
 ENTRYPOINT ["dotnet", "Defra.TradeImportsDataApiStub.Stub.dll"]
