@@ -4,6 +4,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <AssemblyName>Defra.ScenarioGenerator.Tests</AssemblyName>
     <RootNamespace>Defra.ScenarioGenerator.Tests</RootNamespace>
   </PropertyGroup>

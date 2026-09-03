@@ -5,6 +5,7 @@
     <AssemblyName>Defra.TradeImportsDataApiStub.Stub</AssemblyName>
     <RootNamespace>Defra.TradeImportsDataApiStub.Stub</RootNamespace>
     <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
